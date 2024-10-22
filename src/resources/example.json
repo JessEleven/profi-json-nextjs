@@ -1,0 +1,33 @@
+[
+  {
+    "pathRoot": "/me/external_accounts",
+    "providerUserId": "107425363821625086038",
+    "emailAddress": "jesus.renjifo26@gmail.com",
+    "approvedScopes": "email https://www.googleapis.com/auth/userinfo.email https://...",
+    "firstName": "J",
+    "lastName": "Jesus",
+    "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2xo...",
+    "username": "",
+    "publicMetadata": {},
+    "label": null,
+    "verification": {
+      "pathRoot": "",
+      "status": "verified",
+      "strategy": "oauth_google",
+      "nonce": null,
+      "message": null,
+      "externalVerificationRedirectURL": null,
+      "attempts": null,
+      "expireAt": "2024-07-12T00:24:44.760Z",
+      "error": {
+        "code": "external_account_missing_refresh_token",
+        "message": "Missing refresh token",
+        "longMessage": "We cannot refresh your OAuth access token because the server...",
+        "meta": {}
+      }
+    },
+    "id": "eac_2j7fy7ofptw2kQTHHorJDEB9DoI",
+    "identificationId": "idn_2j7fyAvDWDBonenYWL7b4Guripf",
+    "provider": "google"
+  }
+]
