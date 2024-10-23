@@ -38,25 +38,24 @@ export default function NavbarLink () {
                   <span className='hidden lg:block'>
                     <UserButton />
                   </span>
-
                 </div>
                 )
               : (
                 <nav>
-                  <ul className='hidden lg:flex items-center gap-x-3'>
+                  <ul className='flex items-center gap-x-3'>
                     <li>
                       <Link href='/dashboard' className='btn-navbar-border'>
                         Dashboard
                       </Link>
                     </li>
-                    <li>
-                      {pathname !== '/about' &&
-                        (
+                    {pathname !== '/about' &&
+                      (
+                        <li className='hidden lg:block'>
                           <button type='button' onClick={() => signOut()} className='btn-navbar-bg text-neutral-50'>
                             Sign Out
                           </button>
-                        )}
-                    </li>
+                        </li>
+                      )}
                   </ul>
                 </nav>
                 )}

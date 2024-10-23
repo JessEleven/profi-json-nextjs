@@ -36,8 +36,8 @@ export default function LandingPage () {
             </section>
 
             <section className='flex flex-col justify-center items-center mx-4 md:mx-0 mt-5'>
-              <h3 className='text-base md:text-xl text-center font-medium font-mono'>Dark mode raady.
-                <span className='underline decoration-orange-400 decoration-wavy decoration-from-font underline-offset-4'> Accessible.</span> Modern.
+              <h3 className='text-base md:text-xl text-center font-medium font-mono'>Easy to use.
+                <span className='underline decoration-orange-400 decoration-wavy decoration-from-font underline-offset-4'> Accessible.</span> UI Modern.
               </h3>
 
               <section className='mt-10 w-full mx-auto md:w-[620px]'>

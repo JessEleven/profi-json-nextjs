@@ -11,22 +11,8 @@ export const metadata = {
 }
 
 export default function RootLayout ({ children }) {
-  const appearance = {
-    UserButton: {
-
-      variables: {
-        colorText: 'white',
-        colorBackground: '#363636'
-      }
-    },
-    SingIn: {
-
-    }
-
-  }
-
   return (
-    <ClerkProvider appearance={appearance}>
+    <ClerkProvider>
       <html lang='en'>
         <body className={inter.className}>
           {children}

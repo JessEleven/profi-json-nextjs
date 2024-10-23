@@ -11,7 +11,7 @@ export default function DashboardPage () {
     <main>
       <Navbar />
       <main className='mx-4 xl:mx-0'>
-        <h2 className='text-center text-2xl font-bold mt-5'>Welcome back 🎉</h2>
+        <h2 className='text-center text-2xl font-bold mt-5'>Welcome back</h2>
         <p className='text-center text-base font-medium mt-5'>
           Hello {user?.firstName} {user?.lastName} 👋. Your session is active
           <br />
