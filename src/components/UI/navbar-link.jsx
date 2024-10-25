@@ -1,4 +1,5 @@
 'use client'
+import { getSessionExpiry } from '@/utils/session-helpers'
 import { useAuth, UserButton, useSession } from '@clerk/nextjs'
 import { IconCircleFilled } from '@tabler/icons-react'
 import Link from 'next/link'
@@ -9,9 +10,7 @@ export default function NavbarLink () {
   const { session } = useSession()
   const pathname = usePathname()
 
-  const sessionExpiry = session?.expireAt
-    ? new Date(session.expireAt).toLocaleDateString()
-    : 'N/A'
+  const sessionExpiry = getSessionExpiry()
 
   return (
     <section className='inline-flex gap-x-3 items-center text-xs font-medium'>
@@ -35,9 +34,7 @@ export default function NavbarLink () {
                     {`Expires on: ${sessionExpiry}`}
                   </span>
 
-                  <span className='hidden lg:block'>
-                    <UserButton />
-                  </span>
+                  <UserButton />
                 </div>
                 )
               : (

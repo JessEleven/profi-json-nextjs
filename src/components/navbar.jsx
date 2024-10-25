@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import NavbarLink from './UI/navbar-link'
 import Image from 'next/image'
-import { IconMenu2 } from '@tabler/icons-react'
+import MenuMobile from './UI/menu-mobile'
 
 export default function Navbar () {
   return (
@@ -21,7 +21,7 @@ export default function Navbar () {
         <NavbarLink />
 
         <div className='block lg:hidden'>
-          <IconMenu2 />
+          <MenuMobile />
         </div>
       </section>
     </header>

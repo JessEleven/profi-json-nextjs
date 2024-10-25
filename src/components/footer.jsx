@@ -16,8 +16,8 @@ export default function Footer () {
             <Image
               src='/logo-app.png'
               alt='logo-app'
-              width={24}
-              height={24}
+              width={28}
+              height={2}
               priority
             />
             <h3 className='ml-1.5'>ProfiJSON</h3>
@@ -30,7 +30,7 @@ export default function Footer () {
 
         <span className='inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start'>
           <a className='rounded-full p-1 bg-neutral-800' href='https://github.com/JessEleven/profi-json-nextjs' rel='noreferrer' target='_blank'>
-            <IconBrandGithub width={20} height={20} className='text-neutral-200' />
+            <IconBrandGithub width={18} height={18} className='text-neutral-200' />
           </a>
         </span>
       </div>

@@ -18,7 +18,7 @@ export default function DashboardPage () {
           Your email address is {user?.primaryEmailAddress?.emailAddress}
         </p>
 
-        <section className='my-10 px-2 pt-2 pb-2.5 rounded-lg bg-[#282A36] w-full mx-auto md:w-[600px] lg:w-[750px] xl:w-[900px]'>
+        <article className='my-10 px-2 pt-2 pb-2.5 rounded-lg bg-[#282A36] w-full mx-auto md:w-[600px] lg:w-[750px] xl:w-[900px]'>
           <SyntaxHighlighter language='javascript' style={dracula}>
             {JSON.stringify(
               user?.externalAccounts,
@@ -26,7 +26,7 @@ export default function DashboardPage () {
               2
             )}
           </SyntaxHighlighter>
-        </section>
+        </article>
       </main>
     </main>
   )
