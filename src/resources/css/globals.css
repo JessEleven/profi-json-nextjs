@@ -6,6 +6,10 @@ body {
   @apply bg-neutral-200
 }
 
+.font-status {
+  font-size: 9px;
+}
+
 .btn-navbar-border {
   @apply px-3 py-1.5 border border-orange-600 rounded-md
 }

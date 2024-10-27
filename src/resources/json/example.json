@@ -1,11 +1,11 @@
 [
   {
     "pathRoot": "/me/external_accounts",
-    "providerUserId": "107425363821625086038",
-    "emailAddress": "jesus.renjifo26@gmail.com",
+    "providerUserId": "107425363821625982612",
+    "emailAddress": "johnfloyd@gmail.com",
     "approvedScopes": "email https://www.googleapis.com/auth/userinfo.email https://...",
-    "firstName": "J",
-    "lastName": "Jesus",
+    "firstName": "John",
+    "lastName": "Floyd",
     "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2xo...",
     "username": "",
     "publicMetadata": {},
@@ -26,8 +26,8 @@
         "meta": {}
       }
     },
-    "id": "eac_2j7fy7ofptw2kQTHHorJDEB9DoI",
-    "identificationId": "idn_2j7fyAvDWDBonenYWL7b4Guripf",
+    "id": "eac_2j7fy7ofptw2kQTHHorJD2612JJ",
+    "identificationId": "idn_2j7fyAvDWDBonenYWL7b4G160917",
     "provider": "google"
   }
 ]

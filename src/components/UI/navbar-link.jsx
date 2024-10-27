@@ -1,16 +1,12 @@
 'use client'
-import { getSessionExpiry } from '@/utils/session-helpers'
-import { useAuth, UserButton, useSession } from '@clerk/nextjs'
-import { IconCircleFilled } from '@tabler/icons-react'
+import { getSessionExpiry, getSessionStatus } from '@/utils/session-helpers'
+import { useAuth, UserButton } from '@clerk/nextjs'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 export default function NavbarLink () {
   const { isSignedIn, signOut } = useAuth()
-  const { session } = useSession()
   const pathname = usePathname()
-
-  const sessionExpiry = getSessionExpiry()
 
   return (
     <section className='inline-flex gap-x-3 items-center text-xs font-medium'>
@@ -25,23 +21,24 @@ export default function NavbarLink () {
             {pathname === '/dashboard'
               ? (
                 <div className='flex items-center gap-x-3'>
-                  <div className='flex items-center gap-x-0.5 bg-neutral-300 rounded-full py-0.5 px-2'>
-                    <IconCircleFilled width={12} height={12} className='text-green-500' />
-                    <h5 className='capitalize pb-[1px]'>{session?.status}</h5>
+                  <div className='hidden lg:block'>
+                    {getSessionStatus()}
                   </div>
 
-                  <span className='hidden lg:block w-[68px]'>
-                    {`Expires on: ${sessionExpiry}`}
-                  </span>
+                  <div className='hidden lg:block w-[68px]'>
+                    {getSessionExpiry()}
+                  </div>
 
-                  <UserButton />
+                  <div className='hidden lg:block'>
+                    <UserButton />
+                  </div>
                 </div>
                 )
               : (
                 <nav>
                   <ul className='flex items-center gap-x-3'>
                     <li>
-                      <Link href='/dashboard' className='btn-navbar-border'>
+                      <Link href='/dashboard' className='hidden xl:block btn-navbar-border'>
                         Dashboard
                       </Link>
                     </li>
